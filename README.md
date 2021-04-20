@@ -1,4 +1,26 @@
 # ViewAccountStatementApi
+
+The server will handle requests to view statements by performing simple search on date and amount ranges.
+- The request should specify the account id.
+- The request can specify from date and to date (the date range).
+- The request can specify from amount and to amount (the amount range).
+- If the request does not specify any parameter, then the search will return three months back statement.
+- If the parameters are invalid a proper error message should be sent to user.
+- The account number should be hashed before sent to the user.
+- All the exceptions should be handled on the server properly.
+
+The authenticated users are:
+User1: Username: admin & Password: admin
+User2: Username: user & Password: user
+
+- The ‘admin’ can perform all the requests (specify date and amount range).
+- The ‘user’ can only do a request without parameters which will return the three months back statement.
+- When the test user tries to specify any parameter, then HTTP unauthorized (401) access error will be sent.
+- The user cannot login twice (the user should logout before login).
+- The session time out is 5 minutes.
+
+Database file: accountsdb.accdb
+
 Java Framework used - 
 1. Spring Boot for creating microservices
 2. Lombok for code concise and logging support
