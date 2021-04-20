@@ -26,8 +26,9 @@ Java Framework used -
 2. Lombok for code concise and logging support
 3. Spring Security for authorization and authentication
 4. ucanaccess source code for connecting to MS-Access DB
-5. Junit and Rest Assured for unit testing
-6. Sonarqube plugin to generate Sonarqube report
+5. Common Codec to implement SHA256 hashing algorithm
+6. Junit and Rest Assured for unit testing
+7. Sonarqube plugin to generate Sonarqube report
 
 Prerequisite-
 1. Maven should be installed
